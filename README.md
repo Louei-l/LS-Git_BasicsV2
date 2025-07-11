@@ -4,4 +4,8 @@ exploring
 
 Testing a new staging - commit - push => 'Hello World' 
 
+<<<<<<< HEAD
 Getting a hand of pushing => 'this is fun!'
+=======
+Testing a pull procedure by editing directly from Github.
+>>>>>>> refs/remotes/origin/main
