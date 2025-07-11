@@ -3,3 +3,5 @@ adding random comment to learn branch merging
 exploring
 
 Testing a new staging - commit - push => 'Hello World' 
+
+Testing a pull procedure by editing directly from Github.
