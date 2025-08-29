@@ -1,0 +1,4 @@
+/*
+excellent source of documentation for JS is the official ECMA International.
+another great source is MDN
+*/
