@@ -1,5 +1,9 @@
-let fish = ['Dory', 'Marlin', 'Gill', 'Nemo', 'Bruce'];
-for (let i = 0; i <= fish.length - 2; i +=1) {
+let fish = ['Bruce', 'Marlin', 'Nemo', 'Dory', 'Gill'];
+for (let i = 0; i <= fish.length - 1; i +=1) {
+  if (fish[i] === 'Nemo') {
+    console.log(fish[i]);
+    return;
+  }
   console.log(fish[i]);
 }
 
