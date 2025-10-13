@@ -1,4 +1,4 @@
-const weatherArr = ['sunny', 'rainy', 'stormy'];
+const weatherArr = ['sunny', 'rainy', 'stormy', 'snowy'];
 const arrIndex = Math.floor(Math.random() * weatherArr.length);
 const weather = weatherArr[arrIndex];
 
@@ -7,7 +7,7 @@ switch (weather) {
     console.log("It's a beautiful day!");
     break;
   case 'snowy':
-    console.log("Don't forget your scarf");
+    console.log("Don't forget your scarf.");
     break;
   case 'rainy':
     console.log('Grab your umbrella.');
