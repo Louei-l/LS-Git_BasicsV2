@@ -9,7 +9,7 @@ const langGreeting = {
 
 
 const greet = (lang) => {
-  console.log(langGreeting[lang]);
+  return langGreeting[lang];
 }
 
-greet('af');
+console.log(greet('af'));
