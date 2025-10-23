@@ -1,15 +1,16 @@
 const extractRegion = (locale) => {
-  if (typeof locale !== 'string' || !useRegex(locale)) {
-    return 'Please enter correct locale as a string';
+  if (typeof locale !== 'string' || !isValidLocale(locale)) {
+    return null;
   } 
-  return locale.split('_')[1].split('.')[0]
+  return locale.split('_')[1].split('.')[0];
 }
 
 
 //helper function
-function useRegex(input) {
-    let regex = /[A-Za-z][A-Za-z]_[A-Za-z][A-Za-z]\.UTF-\d/;
+function isValidLocale(input) {
+    let regex = /[A-Za-z]{2}_[A-Za-z]{2}.UTF-\d+$/;
     return regex.test(input);
 }
 
 console.log(extractRegion('en_US.UTF-8'));
+
