@@ -1,6 +1,6 @@
 const energy = ['fossil', 'solar', 'wind', 'tidal', 'fusion'];
-energy.splice(0,1);
-energy[4] = 'geothermal'
+energy.shift(); //removing first item
+energy.push('geothermal'); // adding geothermal to the end
 
 //verify code
 console.log(energy);
