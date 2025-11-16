@@ -1,0 +1,12 @@
+let student = {
+  name: 'Carmen',
+  age: 14,
+  grade: 10,
+  courses: ['biology', 'algebra', 'composition', 'ceramics'],
+  gpa: 3.75,
+};
+
+let courseList = student.courses
+
+//verify output
+console.log(courseList);
