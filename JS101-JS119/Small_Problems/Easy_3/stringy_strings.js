@@ -1,13 +1,17 @@
 function stringy (num) {
-  //if number is even work with '10'
-  let output;
-  if (num % 2 === 0) {
-    output = '10'.repeat(num / 2);
-  } else { //number if odd so we do same logic as even and just add a 1 at the end
-    output = '10'.repeat(num / 2) + '1';
-  }
-  return output;
-}
+  if (num === 0) return 'stringy is empty :)';
+  if (num === 1) return '1'
 
-console.log(stringy(6));
-console.log(stringy(7));
+
+
+  //if number is even work with '10'
+  if (num % 2 === 0) {
+    return '10'.repeat(num / 2);
+  } else { //number is odd so we do same logic as even and just add a 1 at the end
+    return '10'.repeat(num / 2) + '1';
+  }
+}
+console.log(stringy(0)); // stringy is empty :)
+console.log(stringy(1)); // 1
+console.log(stringy(6)); // 101010
+console.log(stringy(7)); // 1010101
